@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: freddyLiberty
+  host: freddyLiberty
+  disk_quota: 1024M
+  services:
+  - Conversation-rm
+  - Text to Speech-8l
+  - Speech to Text-57
